@@ -56,24 +56,26 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://sites.google.com/view/jiayunluo/jiayun-luo-letitia" target="_blank">Jiayun Luo</a><sup>‡</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://sites.google.com/view/mirrayatimtiazhossain/home" target="_blank">Mir Rayat Imtiaz Hossain</a><sup>‡</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="http://boyangli.org/" target="_blank">Boyang Li</a><sup>†</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://www.cs.ubc.ca/~lsigal/" target="_blank">Leonid Sigal</a><sup>‡</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                        <span class="author-block">Nanyang Technological University, Singapore<sup>†</sup><br>
+                        University of British Columbia, Vector Institute for AI, Canada<sup>‡</sup><br>CVPR 2024</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2412.08110" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,7 +84,7 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+                    <!-- Supplementary PDF link
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -91,9 +93,9 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
-                  <!-- Github link -->
+                  <!-- Github link 
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -102,11 +104,11 @@
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2412.08110" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -148,7 +150,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Vision-Language Models (VLMs) implicitly learn to associate image regions with words from large-scale training data, demonstrating an emergent capability for grounding concepts without dense annotations. However, the coarse-grained supervision from image-caption pairs is often insufficient to resolve ambiguities in object-concept correspondence, even with enormous data volume. Rich semantic and syntactic structures within the text modality have been overlooked as sources of supervision. Starting from contrastive architectures (BLIP and ALBEF) that show strong intrinsic grounding abilities, we propose HIerarchically STructured Learning (HIST). HIST enhances spatial vision-language alignment without using additional human annotations, by hierarchically decomposing captions into the constituent Subjects, Phrases, and Composite Phrases, and enforcing entailment relation between a parent and its children in the hierarchy. Specifically, we introduce two novel loss functions: (1) Subject Loss, which aligns image content with the subject of the corresponding phrase, acting as an entailment of standard contrastive matching losses at the Phrase level; (2) Composite Loss, to balance attention across multiple objects. HIST is general, and can be applied to any VLM for which attention between vision and language can be computed. Compared to baseline VLMs, HIST achieves up to +9.8% improvement in visual grounding and +6.3% in multi-object referring segmentation. Surprisingly, the improved spatial grounding leads to improvements in other downstream VLM tasks: +1.1% in image-text retrieval, and +0.2% in visual question answering.
           </p>
         </div>
       </div>
