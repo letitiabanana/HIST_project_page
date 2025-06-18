@@ -125,14 +125,13 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Teaser video -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
+        <source src="static/videos/banner_video.mp4" type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
@@ -141,6 +140,15 @@
   </div>
 </section>
 <!-- End teaser video -->
+
+<!-- Set video playback speed -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const video = document.getElementById('tree');
+    video.playbackRate = 0.75; // Change this value to adjust speed
+  });
+</script>
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -165,6 +173,19 @@
   <div class="hero-body">
     <div class="container">
       <!-- Section Title -->
+      <h2 class="title is-3">HIerarchically STructured (HIST) framework</h2>
+      <img src="HIST_modelchoice.jpg" alt="HIST model choice"
+           style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
+      <h2 class="subtitle">
+        Zero-shot Performance of VLMs on Weakly-supervised Visual Grounding. Performance (IoU@0.5) of VLMs with contrastive losses (top) and language modeling losses (bottom) on the referring expression comprehension. Contrastive models like ALBEF, while smaller, exhibit much better performance.
+  </div>
+</section>
+
+<!-- Single image section -->
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Section Title -->
       <h2 class="title is-3">Contrastive vs. Generative VLM on Grounding</h2>
       <img src="HIST_modelchoice.jpg" alt="HIST model choice"
            style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
@@ -175,7 +196,7 @@
 
 
 <!-- Single image section -->
-<section class="hero is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Section Title -->
