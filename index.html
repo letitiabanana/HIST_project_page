@@ -176,7 +176,7 @@
       <h2 class="title is-3">HIerarchically STructured (HIST) framework</h2>
       <img src="static/images/HIST_structure.jpg" alt="HIST model choice"
            style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
-      <h2 class="subtitle">
+      <h2 class="subtitle" style="margin-top: 1.5rem;">
         Existing VLM models train from unstructured image-caption pairs. The proposed HIerarchically STructured (HIST) learning framework decompose captions into hierarchy of phrases, establishing entailment between phrases and the image, and among the phrases themselves using proposed losses. Specifically, it extracts subjects (Subject level) from phrases and aligns them to the image, along with the corresponding phrases themselves (Phrase level). In addition, it combines two phrases together into longer composite phrase and regularizes attention to be a sum of the constituent sub-phrases (Composite Phrase level).
   </div>
 </section>
@@ -189,7 +189,7 @@
       <h2 class="title is-3">Contrastive vs. Generative VLM on Grounding</h2>
       <img src="static/images/HIST_modelchoice.jpg" alt="HIST model choice"
            style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
-      <h2 class="subtitle">
+      <h2 class="subtitle" style="margin-top: 1.5rem;">
         Zero-shot Performance of VLMs on Weakly-supervised Visual Grounding. Performance (IoU@0.5) of VLMs with contrastive losses (top) and language modeling losses (bottom) on the referring expression comprehension. Contrastive models like ALBEF, while smaller, exhibit much better performance. As such, we apply HIST on ALBEF and BLIP, two contrastive based VLM, 
   </div>
 </section>
@@ -202,7 +202,7 @@
       <!-- Section Title -->
       <h2 class="title is-3">Referring Segmentation Result</h2>
       <img src="static/images/HIST_REFSEG.png" alt="Qualitative results for ALBEF, SelfEQ, and HIST" style="max-width: 60%; height: auto; display: block; margin: 0 auto;" />
-      <h2 class="subtitle">
+      <h2 class="subtitle" style="margin-top: 1.5rem;">
         Qualitative Result for ALBEF, /w SelfEQ and /w HIST on Visual Grounding and Referring Segmentation. Images are from RefCOCO+. The enlarged red stars represent the top 4 locations with the highest predicted attention value from respective methods. To obtain segmentation mask, we input the four points into SAM~\cite{SAM} as point prompts. We note that the HIST accurately detects all objects in prompts.
       </h2>
     </div>
